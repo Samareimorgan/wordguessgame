@@ -7,89 +7,85 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Hot and Spicy WordGuess</title>
+  
+  <!--Link Reset Style-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-  <!--Link Bootstrap-->
+  <!--Link Bootstrap CSS-->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
+  crossorigin="anonymous">
+ 
   <!--Link CSS Stylesheet-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+  
   <!--Link Javascript-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
   <link rel="javascript" type="text/javascript" href="assets/javascript/game.js">
+
 </head>
-<
+<!--Add Header-->
+
+<header>
+    <h1 class="textorange"><strong>Welcome to Hot & Spicy Word Guess!</strong></h1>
+</header>
 <!--Main Content Body-->
 <body>
   <!--Game Container-->
   <div class="container.fluid">
   <!--Row 1 that spans the whole width-->
-  <div class="row">
-  <!--Background Image of Flaming Pepper-->
-  <img class="img-responsive flamepepperimg" src="assets/images/flamingPepper.jpg" alt="Jalapenos on fire">
-  !--Add Header-->
-<header>
-  <h1 class="textorange">Welcome to Hot & Spicy Word Guess!</h1>
-</header>
-  <!--Column 1 that spans 25% of the viewport-->
-    <!--Column 1 Row 1-->
-    <div class="col-xs-3 col-sm-3 col-md-3">
-      <div class="row pull-left">
-        <h2>Choose Your Heat Level:</h2>
+    <div class="row">
+    <!--Column 1-->
+      <div class="col-xs-2 col-sm-2 col-md-2">
+        <h3 class ="textorange">Choose Your Heat Level:</h3>
         <!--List Difficulty Levels-->
           <button type="button" class="btn btn-primary btn-lg btn-block">Mild</button>
           <button type="button" class="btn btn-default btn-lg btn-block">Medium</button>
           <button type="button" class="btn btn-default btn-lg btn-block">Spicy</button>
           <button type="button" class="btn btn-default btn-lg btn-block">Extra Spicy</button>
-      </div>
-    <!--Column 1 Row 2-->
-      <div class="row">
-        <h2>Your Category Is:</h2>
+    
+        <h3 class="textorange">Your Category Is:</h3>
         <!--List Categories-->
-        
-          <h3>Candy</h3>
-          <h3>Chilies/Peppers</h3>
-          <h3>Deserts</h3>
-          <h3>Spices</h3>
-          <h3>Volcanoes</h3>
+          <h4>Candy</h4>
+          <h4>Chilies/Peppers</h4>
+          <h4>Deserts</h4>
+          <h4>Spices</h4>
+          <h4>Volcanoes</h4>
+      </div>
+    <!--Column 2-->
+      <div class="col-xs-8 col-sm-8 col-md-8">
+        <!--Image of Flaming Pepper-->
+        <img class="img-responsive flamepepperimg" src="assets/images/flamingPepper.jpg" alt="Jalapenos on fire">
+      
+        <!--Column 2 - Row 1-->
+        <div class="row">WordBox Here</div>
+        <!--Column 2 - Row 2-->
+        <div class="row">Guess Letter</div>
+        <!--Column 2 - Row 3-->
+        <div class="row">Letters Guessed</div>
+      </div>
+      <!--Column 3-->
+      <div class="col-xs-2 col-sm-2 col-md-2">
+          <h4="textorange">Letters Available</h4>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z '</p>
+            <br></hr>
+          <h3="textorange">SCORE:</h3>
+            <br></hr>
+          <h3="textorange">How To Play</h3>
       </div>
     </div>
-  <!--Column 2 that spans 50% of the viewport-->
-    <div class="col-xs-6 col-sm-6 col-md-6">
-      <!--Column 2 - Row 1-->
-      <div class="row"></div>
-      <!--Column 2 - Row 2-->
-      <div class="row"></div>
-      <!--Column 2 - Row 3-->
-      <div class="row"></div>
-      <!--Column 2 - Row 4-->
-      <div class="row"></div>
-      <!--Column 2 - Row 5-->
-      <div class="row"></div>
+    
     </div>
-  <!--Column 3 that spans 25% of the viewport-->
-    <div class="col-xs-3 col-sm-3 col-md-3">
-        <!--Column 3 - Row 1-->
-        <div class="row">
-         <h2>Letters Available</h2>
-        </div>
-        <!--Column 3 - Row 2-->
-        <div class="row">
-          <h2>SCORE:</h2>
-        </div>
-        <!--Column 3 - Row 3-->
-        <div class="row">
-          <h3>How To Play</h3>
-        </div>
-    </div>
+  
   </div>
   </div>
 </body>
 <footer>
-  <h4>About the Developer</h4>
-  <h4>Acknowledgements</h4>
+  <h5>About the Developer</h5>
+  <h5>Acknowledgements</h5>
 </footer>
 
 </html>
