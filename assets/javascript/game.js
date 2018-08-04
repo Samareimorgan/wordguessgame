@@ -19,3 +19,5 @@ var spices=["Cajun Seasoning", "Chili Powder", "Paprika", "Cumin", "Cinnamon", "
 var volcanoes=["Yellowstone", "Kilauea", "Mount Saint Helens", "Mauna Loa", "Krakatoa", "Mount Vesuvius", "Olympus Mons",
 "Mount Pelee" , "Havre", "Paricutin", "Novarupta", "Shishaldin"]
 
+var mildLevel=$()
+
