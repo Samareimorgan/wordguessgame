@@ -1,3 +1,16 @@
+// Various Variables //
+var wins=0;
+var losses=0;
+
+var maxGuesses=12;
+
+var wordDisplay=document.getElementsByClassName(...);
+var guessedLetters=document.getElementsByClassName(...);
+var guessNum=document.getElementsByClassName(...);
+var winCount=document.getElementsByClassName(...);
+var lossCount=document.getElementsByClassName(...);
+
+
 //..Level Arrays..//
 var mildLevel=["Hot Tamales", "Red Hots", "Yellow", "Ghost", "Red", "Bell", "Cumin", "Chili Powder", "Cajun Seasoning", "Paprika", "Cinnamon", "Sahara", "Arabian", "Kalahari", "Mojave", "Kilauea", "Mount Saint Helen's", "Yellowstone"]
 
@@ -22,15 +35,38 @@ var spices=["Cajun Seasoning", "Chili Powder", "Paprika", "Cumin", "Cinnamon", "
 var volcanoes=["Yellowstone", "Kilauea", "Mount Saint Helens", "Mauna Loa", "Krakatoa", "Mount Vesuvius", "Olympus Mons",
 "Mount Pelee" , "Havre", "Paricutin", "Novarupta", "Shishaldin"]
 
+var game = new Hangman();
+    document.onkeyup = function(event) {
+    var userGuess = event.key;
+
+
+    function Hangman() {
+        this.wordList =
+//Mild Level Selection
+        //On click event
+    var randIndex="";
+    
+    for(var i = 0; i < 18; i++) {
+     var randomNum = Math.floor((Math.random() *17 ) +1)
+     randIndex= randomNum 
+     console.log("Your Index Number is:" + randomNum)
 // 1. Press a heat level (difficulty) to get started
+
 // 2. On Click of Any heat Level
+    
 // 3. goes through that array level and randomly picks a word
+
 // 4. After word is choice, it goes through the Category arrays until the word is matched.
 // 5. Once the word is matched the script then "activates" the category on the UI
 // 6. Also, once the word is selected, letter spaces are created (appended) to the Wordbox with the length of letters in the selected word.
 // 7. Then, the words " Please select a letter " comes on the screen
-// 8. On key event (letter selection), the script goes through the chosen word in the wordbox to see if that letter matches any in the word. 
+// 8. On key event (letter selection), the script goes through the chosen word in the wordbox to see if that letter 
+//matches any in the word. 
+document.onkeyup = function(event) {
+    var userGuess = event.key;
 //  9. If a letter matches, then it highlights that letter in the letter box Green.
+    
+    for(var i=0; i<)
 //         Also if a letter matches, then it places it on the appropriate line in the wordbox. 
 //         Also it adds it to the Letters Guessed area 
 //         Also it decreases the guesses left by 1

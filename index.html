@@ -24,7 +24,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
 
-  <script type="text/javascript" href="assets/javascript/game.js"></script>
+ <!-- <script type="text/javascript" href="assets/javascript/game.js"></script>-->
 
 </head>
 
@@ -40,55 +40,67 @@
     <div class="row">
     <!--Column 1-->
       <div class="col-2">
-        <h3 class ="textorange">Choose Your Heat Level:</h3>
-        <!--List Difficulty Levels-->
-          <button type="button" data-type="mildLevel" class="btn btn-primary btn-lg btn-block">Mild</button>
-          <button type="button" class="btn btn-default btn-lg btn-block">Medium</button>
-          <button type="button" class="btn btn-default btn-lg btn-block">Spicy</button>
-          <button type="button" class="btn btn-default btn-lg btn-block">Extra Spicy</button>
-    
-        <h3 class="textorange">Your Category Is:</h3>
+        <div class="card">
+          <h3 class ="textorange text-center"><strong>Choose Your Heat Level:</strong></h3>
+          <!--List Difficulty Levels-->
+            <button type="button"  class="btn btn-default btn-lg btn-block btncolor ">Mild</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Medium</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Spicy</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Extra Spicy</button>
+        </div>
+      <br>
+        <div class="card">
+        <h3 class="textorange text-center"><strong>Your Category:</strong></h3>
         <!--List Categories-->
         <ul class="list-group list-group-flush">
-          <li class="list-group-item active">
-              <h4>Candy</h4>
+          <li class="list-group-item">
+              <h4><strong>Candy</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4>Chilies/Peppers</h4>
+              <h4><strong>Peppers</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4>Deserts</h4>
+              <h4><strong>Deserts</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4>Spices</h4>
+              <h4><strong>Spices</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4>Volcanoes</h4>
+              <h4><strong>Volcanoes</strong></h4>
           </li>
         </ul>
+        </div>
       </div>
     <!--Column 2-->
       <div class="col-8 bgimage">
         <!--Column 2 - Row 1-->
-        <div class="row wordbox">WordBox Here</div>
-        <!--Column 2 - Row 2-->
-        <div class="row">Guess Letter</div>
-        <!--Column 2 - Row 3-->
-        <div class="row">Letters Guessed</div>
+        <!--<div class="row wordbox">WordBox Here</div>-->
+        <div class="d-inline-flex p-2 bd-highlight wordbox text-uppercase"><span id="wordchoice">Wordbox</span></div>
+        <!--Column 2 - Letter Guess Box-->
+        <div class="d-flex p-2 bd-highlight guessbox"><p>You guessed:
+          <span id="letterguess"></span> </p>
+        </div>
       </div>
       <!--Column 3-->
       <div class="col-2">
         <div class="card">
-          <h4 class ="textorange card-title">Letters Available</h4>
-            <p class="card-body">a b c d e f g h i j k l m n o p q r s t u v w x y z '</p>
+          <h4 class ="textorange card-title text-center">Letters Available</h4>
+            <p class="card-body lettertext text-justify">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z '</p>
+            <p class="card-body letterwrong text-justify">If Guess is Wrong, Letter turns RED</p>
+            <p class="card-body lettersuccess text-justify">If Guess is Correct, Letter turns GREEN</p>
         </div>
             <br>
           </hr>
-          <h3="textorange">SCORE:</h3>
+        <div class="card">
+          <h4 class="textorange card-title text-center">SCORE:</h4>
+          <h5 class="wins"><strong>Wins:</strong></h5>
+          <h5 class="losses"><strong>Losses:</strong></h5>
+          </div>
             <br>
           </hr>
-          <h3="textorange">How To Play</h3>
-        
+        <div class="card">
+          <h3 class="textorange card-title text-center">How To Play</h3>
+        </div>
       </div>
     </div>
     
@@ -96,10 +108,25 @@
   
   </div>
   </div>
-</body>
-<footer>
-  <h5>About the Developer</h5>
-  <h5>Acknowledgements</h5>
-</footer>
 
+  <script type="text/javascript">
+   // var wordChoiceInd = "";    //Global Variable
+    //var wordChoice = "";
+    //var mildLevel=["Hot Tamales", "Red Hots", "Yellow", "Ghost", "Red", "Bell", "Cumin", "Chili Powder", "Cajun Seasoning", "Paprika", "Cinnamon", "Sahara", "Arabian", "Kalahari", "Mojave", "Kilauea", "Mount Saint Helen's", "Yellowstone"]
+    //var mildbtn=document.getElementsByClassName(".mild");
+
+    //mildbtn.addEventListener('click', function() { //onclick of mild
+    //for(var i = 0; i < 17; i++) {     //For Loop generates a Random Number from the Mild Level. 
+    // var randomNum = Math.floor(Math.random() * 17) + 0;
+    //document.getElementsByClassName(".mildLevel[randomNum]").push(".wordbox"); //places the word from the mild level into the word box
+    var letterGuess = document.getElementById("letterguess");
+
+    document.onkeyup = function(event) {
+      letterGuess.textContent = event.key;
+    };
+
+
+  </script>
+      
+</body>
 </html>

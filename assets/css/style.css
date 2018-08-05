@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     float:left;
     width: 100%;
-    background-color: hsla(47, 18%, 76%, 0.9);
+    background-color: hsla(0, 82%, 16%, 1);
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .textorange {
@@ -24,17 +25,51 @@ header {
 }
 
 .wordbox {
-    text-decoration-line: underline;
-    font-size: 16px;
+    
+    font-size: 22px;
+    color: whitesmoke;
     letter-spacing: 1em;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 3%;
     margin-right: 45%;
     margin-left: 5%;
     padding: 10%;
     border: 2px solid gray;
+    width: 45%;
+    height: 40%;
 }
 
 .list-group-item.active {
     background-color: red;
+}
+.lettertext {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.btncolor {
+    background-color:hsla(33, 88%, 77%, 1);
+    font-weight: bold;
+}
+.guessbox {
+    background-color:whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    width: 35%;
+    margin-left: 5%;
+}
+
+.letterwrong {
+    color: Red;
+}
+
+.lettersuccess {
+    color:green;
 }
