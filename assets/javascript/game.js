@@ -50,11 +50,7 @@ var game = new Hangman();
      var randomNum = Math.floor((Math.random() *17 ) +1)
      randIndex= randomNum 
      console.log("Your Index Number is:" + randomNum)
-// 1. Press a heat level (difficulty) to get started
 
-// 2. On Click of Any heat Level
-    
-// 3. goes through that array level and randomly picks a word
 
 // 4. After word is choice, it goes through the Category arrays until the word is matched.
 // 5. Once the word is matched the script then "activates" the category on the UI
@@ -62,11 +58,7 @@ var game = new Hangman();
 // 7. Then, the words " Please select a letter " comes on the screen
 // 8. On key event (letter selection), the script goes through the chosen word in the wordbox to see if that letter 
 //matches any in the word. 
-document.onkeyup = function(event) {
-    var userGuess = event.key;
 //  9. If a letter matches, then it highlights that letter in the letter box Green.
-    
-    for(var i=0; i<)
 //         Also if a letter matches, then it places it on the appropriate line in the wordbox. 
 //         Also it adds it to the Letters Guessed area 
 //         Also it decreases the guesses left by 1
