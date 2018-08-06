@@ -43,10 +43,10 @@
         <div class="card">
           <h3 class ="textorange text-center"><strong>Choose Your Heat Level:</strong></h3>
           <!--List Difficulty Levels-->
-            <button type="button"  class="btn btn-default btn-lg btn-block btncolor" onclick="mildbtn()">Mild</button>
+            <button type="button"  class="btn btn-default btn-lg btn-block btncolor" onclick="mildbtn()", "colorchange()">Mild</button>
             <button type="button" class="btn btn-default btn-lg btn-block btncolor" onclick="mediumbtn()">Medium</button>
-            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Spicy</button>
-            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Extra Spicy</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor" onclick="spicybtn()">Spicy</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor" onclick="exspicybtn()">Extra Spicy</button>
         </div>
       <br>
         <div class="card">
@@ -54,19 +54,19 @@
         <!--List Categories-->
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-              <h4><strong>Candy</strong></h4>
+              <h4 id=Candy><strong>Candy</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4><strong>Peppers</strong></h4>
+              <h4 id=Peppers><strong>Peppers</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4><strong>Deserts</strong></h4>
+              <h4 id=Deserts><strong>Deserts</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4><strong>Spices</strong></h4>
+              <h4 id=Spices><strong>Spices</strong></h4>
           </li>
           <li class="list-group-item">
-              <h4><strong>Volcanoes</strong></h4>
+              <h4 id=Volcanoes><strong>Volcanoes</strong></h4>
           </li>
         </ul>
         </div>
@@ -78,7 +78,7 @@
         <div class="d-inline-flex p-2 bd-highlight wordbox text-uppercase"><span id="wordchoice">Wordbox</span></div>
         <!--Column 2 - Letter Guess Box-->
         <div class="d-flex p-2 bd-highlight guessbox"><p>You guessed:
-          <span id="letterguess"></span> </p>
+          <span id="letterguess">letter should go here</span></p>
         </div>
       </div>
       <!--Column 3-->
@@ -110,7 +110,13 @@
   </div>
 
   <!--<script type="text/javascript">
-   // var wordChoiceInd = "";    //Global Variable
+  var letterGuess = document.getElementById("letterguess");
+     document.onkeyup = function(event) {
+      letterGuess.textContent = event.key;
+    };
+  
+  
+  // var wordChoiceInd = "";    //Global Variable
     //var wordChoice = "";
     //var letterGuess=[];  //Stores letters guessed
     //var wordChoice = []; //Stores current Word to match the guess
@@ -144,7 +150,6 @@
 //if (userGuess.length !== 1); {
  //   alert("Select a single letter.");
  // }
-};
 
 </script>
 -->
