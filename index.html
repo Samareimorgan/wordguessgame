@@ -24,7 +24,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
 
- <!-- <script type="text/javascript" href="assets/javascript/game.js"></script>-->
+ <script src="assets/javascript/game2.js"></script>
 
 </head>
 
@@ -43,8 +43,8 @@
         <div class="card">
           <h3 class ="textorange text-center"><strong>Choose Your Heat Level:</strong></h3>
           <!--List Difficulty Levels-->
-            <button type="button"  class="btn btn-default btn-lg btn-block btncolor ">Mild</button>
-            <button type="button" class="btn btn-default btn-lg btn-block btncolor">Medium</button>
+            <button type="button"  class="btn btn-default btn-lg btn-block btncolor" onclick="mildbtn()">Mild</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btncolor" onclick="mediumbtn()">Medium</button>
             <button type="button" class="btn btn-default btn-lg btn-block btncolor">Spicy</button>
             <button type="button" class="btn btn-default btn-lg btn-block btncolor">Extra Spicy</button>
         </div>
@@ -109,24 +109,45 @@
   </div>
   </div>
 
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
    // var wordChoiceInd = "";    //Global Variable
     //var wordChoice = "";
-    //var mildLevel=["Hot Tamales", "Red Hots", "Yellow", "Ghost", "Red", "Bell", "Cumin", "Chili Powder", "Cajun Seasoning", "Paprika", "Cinnamon", "Sahara", "Arabian", "Kalahari", "Mojave", "Kilauea", "Mount Saint Helen's", "Yellowstone"]
-    //var mildbtn=document.getElementsByClassName(".mild");
+    //var letterGuess=[];  //Stores letters guessed
+    //var wordChoice = []; //Stores current Word to match the guess
+    //var mildLevelInd; //Index of the mild Level word selected
+  
+  //var letterArray=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","'"]
+  //function matchLetter(letterArray) {
+   // for(var i=0; i<letterArray.length; i++)
+     // if(match(letterArray[i])) {
+      //  i
+      //}
 
-    //mildbtn.addEventListener('click', function() { //onclick of mild
-    //for(var i = 0; i < 17; i++) {     //For Loop generates a Random Number from the Mild Level. 
-    // var randomNum = Math.floor(Math.random() * 17) + 0;
-    //document.getElementsByClassName(".mildLevel[randomNum]").push(".wordbox"); //places the word from the mild level into the word box
-    var letterGuess = document.getElementById("letterguess");
+     
+    //  result=[]
+ // }
+ // document.onkeyup=function matchLetter {
+  
+ // }
 
-    document.onkeyup = function(event) {
-      letterGuess.textContent = event.key;
-    };
+ //Draft code//
 
 
-  </script>
+  //Set up answer array
+ // var lettersavail = mildWord.length;
+ // while(lettersavail > 0) {
+ //   var holder=document.getElementById("wordchoice");
+ //   holder.innerHTML=mildAnswer.join(" ");
+//};
+
+//var userGuess = prompt("Choose a letter");
+//if (userGuess.length !== 1); {
+ //   alert("Select a single letter.");
+ // }
+};
+
+</script>
+-->
       
 </body>
 </html>
